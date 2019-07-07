@@ -42,12 +42,55 @@ if (horizontalInput != 0 or verticalInput != 0) {
 	dir = point_direction(0,0,horizontalInput, verticalInput);
 	moveX = lengthdir_x(currentSpeed, dir);
 	moveY = lengthdir_y(currentSpeed, dir);
+	if (place_empty(x + moveX*2, y + moveY*2)) { // if move location is empty (2x big)
+		//vertical collison 
+		//var tL = tilemap_get_at_pixel(tilemap, bbox_left + moveX, bbox_top + moveY) & tile_index_mask; //  checking top left corner
+		//var tR = tilemap_get_at_pixel(tilemap, bbox_right + moveX, bbox_top + moveY) & tile_index_mask; // checking top right corner
+		//var bL = tilemap_get_at_pixel(tilemap, bbox_left + moveX, bbox_bottom + moveY) & tile_index_mask; //  checking bottom left corner
+		//var bR = tilemap_get_at_pixel(tilemap, bbox_right + moveX, bbox_bottom + moveY) & tile_index_mask; // checking bottom right corner
+		var tLY = tilemap_get_at_pixel(tilemap, bbox_left, bbox_top + moveY) & tile_index_mask; //  checking top left corner
+		var tRY = tilemap_get_at_pixel(tilemap, bbox_right, bbox_top + moveY) & tile_index_mask; // checking top right corner
+		var bLY = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom + moveY) & tile_index_mask; //  checking bottom left corner
+		var bRY = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom + moveY) & tile_index_mask; // checking bottom right corner
+		
+		if (moveY > 0) { //if moving downwards
+			if (bLY !=0 or bRY != 0) { //if either bottom corners colliding
+				if(!(tLY != 0 or tRY != 0)){ //if top corners NOT colliding
+					moveY =	0;
+				}
+			}
+		} else if (moveY < 0) { //if moving upwards
+			if (tLY !=0 or tRY != 0) { //if either top corners colliding
+				if(!(bLY != 0 or bRY != 0)){ //if bottom corners NOT colliding
+					moveY =	0;
+				}
+			}
+		}
+		var tLX = tilemap_get_at_pixel(tilemap, bbox_left + moveX, bbox_top) & tile_index_mask; //  checking top left corner
+		var tRX = tilemap_get_at_pixel(tilemap, bbox_right + moveX, bbox_top) & tile_index_mask; // checking top right corner
+		var bLX = tilemap_get_at_pixel(tilemap, bbox_left + moveX, bbox_bottom) & tile_index_mask; //  checking bottom left corner
+		var bRX = tilemap_get_at_pixel(tilemap, bbox_right + moveX, bbox_bottom) & tile_index_mask; // checking bottom right corner
+		//horizontal collision
+		if (moveX > 0) { //if moving right
+			if (tRX != 0 or bRX != 0) { //if top or bottom corner colliding
+				if (!(tLX !=0 or bLX != 0)) { //if top or bottom side NOT colliding
+					moveX =	0;
+				}
+			}
+		} else if (moveX < 0) { //if moving left
+			if (tLX != 0 or bLX != 0) { //if top or bottom corner colliding			
+				if (!(tRX !=0 or bRX != 0)) { //if top or bottom side NOT colliding
+					moveX =	0;
+				}
+			}
+		}
 	
-	x += moveX;
-	y += moveY;
+		x += moveX
+		y += moveY
+	}
 	
 	//Sets the sprite
-	image_speed = 1;
+	image_speed = .5;
 	switch(dir){
 		case 0:		sprite_index = spr_char_r;	break;
 		case 45:	sprite_index = spr_char_ur;	break;
