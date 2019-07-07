@@ -119,14 +119,6 @@
             }
         },
         {
-            "Key": "40345850-5c35-4724-b585-a58b44abb80d",
-            "Value": {
-                "id": "385b9e60-b386-41e5-99d6-9448ba209671",
-                "resourcePath": "rooms\\room0\\room0.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "4307a584-cc85-470e-a643-5bbeccffa9d6",
             "Value": {
                 "id": "ba2e844d-30b0-4ef5-bf34-b4065a0c8c8f",
@@ -156,6 +148,14 @@
                 "id": "3bbcf168-9fbc-4293-b130-2e7a76924e89",
                 "resourcePath": "objects\\obj_invsword\\obj_invsword.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "669f78ce-3d57-48f2-88ea-c096ef7d89e9",
+            "Value": {
+                "id": "f3bf0bfd-5d9a-4cbf-8db0-d80d54e28bdd",
+                "resourcePath": "views\\40345850-5c35-4724-b585-a58b44abb80d-room.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -199,27 +199,11 @@
             }
         },
         {
-            "Key": "7c77f044-fa83-4532-8669-e71e186fe685",
-            "Value": {
-                "id": "365dd5e3-fe75-43ef-a912-9c45a37fd9c8",
-                "resourcePath": "objects\\obj_game\\obj_game.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "811313f8-c88f-4b51-bb00-282dd841fad6",
             "Value": {
                 "id": "52ed5415-f62f-4e88-9c87-0c4ca46671d4",
                 "resourcePath": "sprites\\spr_enemy_dl\\spr_enemy_dl.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "874ab359-0a7d-4c07-8996-e1eb14c2fd4c",
-            "Value": {
-                "id": "11965570-91c8-430c-a6f0-38f64a411c6c",
-                "resourcePath": "objects\\obj_PC\\obj_PC.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -324,14 +308,6 @@
                 "id": "56f8967b-ee66-4c93-a71d-d7d66eb67704",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
-            }
-        },
-        {
-            "Key": "b1895a15-eb13-4f3a-aded-410e07d83077",
-            "Value": {
-                "id": "290a2600-7537-4b1c-8702-bfdc7d3caee1",
-                "resourcePath": "objects\\obj_game1\\obj_game1.yy",
-                "resourceType": "GMObject"
             }
         },
         {
