@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "0e00ddba-6628-42a4-a9d3-2214f1896fec",
+            "Value": {
+                "id": "ba197ebb-a3fd-440f-b47c-4f720b4edb54",
+                "resourcePath": "sprites\\menubutton\\menubutton.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "174a003f-530d-44e4-8d01-b6389a73cdf6",
             "Value": {
                 "id": "8d39cb2a-f4ee-48b5-9c6c-2895839f1ef9",
@@ -132,6 +140,14 @@
                 "id": "ba2e844d-30b0-4ef5-bf34-b4065a0c8c8f",
                 "resourcePath": "sprites\\spr_enemy_d\\spr_enemy_d.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4424889e-f409-480e-957a-2beab3087857",
+            "Value": {
+                "id": "dbf58217-8c14-4c27-bc31-b1a51e5b0566",
+                "resourcePath": "objects\\obj_menubois\\obj_menubois.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -242,7 +258,7 @@
             "Key": "905d9d96-f4cf-443a-ac8a-d00773f6d5b5",
             "Value": {
                 "id": "21fe3d90-f928-413c-9f74-32fbc2e39b39",
-                "resourcePath": "objects\\obj_startbutton\\obj_startbutton.yy",
+                "resourcePath": "objects\\obj_ratbutton\\obj_ratbutton.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -458,7 +474,7 @@
             "Key": "eeb3b12c-768d-436d-8aa3-e1f4132e14a7",
             "Value": {
                 "id": "5f7708e1-5ef0-45e5-bc9b-b457e95227ff",
-                "resourcePath": "sprites\\spr_start_button\\spr_start_button.yy",
+                "resourcePath": "sprites\\spr_ratbutton\\spr_ratbutton.yy",
                 "resourceType": "GMSprite"
             }
         },

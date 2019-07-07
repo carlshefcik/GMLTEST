@@ -2,7 +2,7 @@
     "id": "905d9d96-f4cf-443a-ac8a-d00773f6d5b5",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_startbutton",
+    "name": "obj_ratbutton",
     "eventList": [
         {
             "id": "82b90b90-7b35-48c8-a181-e1fe3189e13e",
